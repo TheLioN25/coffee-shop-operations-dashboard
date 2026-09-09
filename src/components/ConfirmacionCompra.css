@@ -1,0 +1,118 @@
+.confirmacion-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1100;
+}
+
+.confirmacion-modal {
+  width: min(420px, 100%);
+  background: #2b2118;
+  border: 1px solid #765538;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+.confirmacion-icono {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6f4b32;
+  color: #f5eadf;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.confirmacion-modal h2 {
+  margin: 0;
+  color: #f5eadf;
+  font-size: 1.6rem;
+}
+
+.confirmacion-texto {
+  margin: 8px 0 22px;
+  color: #bca99a;
+}
+
+.confirmacion-producto {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  padding: 14px;
+  border-radius: 10px;
+  background: #211912;
+}
+
+.confirmacion-producto img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.confirmacion-producto h3 {
+  margin: 0 0 6px;
+  color: #f5eadf;
+}
+
+.confirmacion-producto p {
+  margin: 0;
+  color: #bca99a;
+}
+
+.confirmacion-resumen {
+  margin-top: 18px;
+  text-align: left;
+}
+
+.confirmacion-resumen > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  color: #bca99a;
+}
+
+.confirmacion-total {
+  margin-top: 8px;
+  padding-top: 12px !important;
+  border-top: 1px solid #4b392c;
+  color: #d8c5b5 !important;
+}
+
+.confirmacion-total strong {
+  color: #d6a66f;
+  font-size: 1.25rem;
+}
+
+.numero-venta {
+  margin: 18px 0;
+  color: #9f8977;
+  font-size: 0.85rem;
+}
+
+.confirmacion-modal button {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #8b5e3c;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.confirmacion-modal button:hover {
+  background: #a8734b;
+}
