@@ -1,0 +1,129 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  background:
+    radial-gradient(circle at top left, #fffaf5 0, transparent 34%),
+    #f5f1eb;
+  color: #2f241f;
+}
+
+.login-card {
+  width: min(100%, 420px);
+  padding: 36px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #e7ddd4;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(70, 50, 40, 0.09);
+}
+
+.login-icono {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #f0e5da;
+  font-size: 25px;
+}
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #352720;
+  font-size: 28px;
+}
+
+.login-descripcion {
+  margin: 8px 0 28px;
+  text-align: center;
+  color: #82736b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.login-campo {
+  margin-bottom: 18px;
+}
+
+.login-campo label {
+  display: block;
+  margin-bottom: 7px;
+  color: #4b3b33;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.login-campo input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #ded2c8;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+  color: #352720;
+  font-size: 14px;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.login-campo input:focus {
+  border-color: #9a7257;
+  box-shadow: 0 0 0 3px rgba(154, 114, 87, 0.12);
+}
+
+.login-error {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border: 1px solid #e6b8ad;
+  border-radius: 9px;
+  background: #fff0ed;
+  color: #9b3928;
+  font-size: 13px;
+}
+
+.login-boton {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #6b422d;
+  color: white;
+  font-size: 14px;
+  font-weight: 650;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.login-boton:hover:not(:disabled) {
+  background: #543222;
+  transform: translateY(-1px);
+}
+
+.login-boton:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.login-volver {
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #75665e;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.login-volver:hover {
+  color: #6b422d;
+}

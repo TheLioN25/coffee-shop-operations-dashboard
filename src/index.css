@@ -161,3 +161,59 @@ body {
   justify-content: center;
   margin: 24px auto 30px;
 }
+
+.estado-aplicacion {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f3ee;
+  color: #6f625b;
+}
+
+.barra-administracion {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px 8px 14px;
+  border: 1px solid #e7ddd4;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 5px 18px rgba(70, 50, 40, 0.08);
+}
+
+.barra-administracion span {
+  color: #75665e;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.boton-cerrar-sesion {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f0e5da;
+  color: #6b422d;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.boton-cerrar-sesion:hover {
+  background: #e7d8ca;
+}
+
+@media (max-width: 600px) {
+  .barra-administracion {
+    top: 14px;
+    right: 14px;
+  }
+
+  .barra-administracion span {
+    display: none;
+  }
+}
