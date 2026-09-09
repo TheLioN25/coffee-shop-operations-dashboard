@@ -122,3 +122,42 @@ body {
     font-size: 34px;
   }
 }
+
+.boton-dashboard {
+  margin-top: 16px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #6b422d;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-dashboard:hover {
+  background: #543222;
+}
+
+.boton-volver-dashboard {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 100;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #6b422d;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-volver-dashboard:hover {
+  background: #543222;
+}
+
+.navegacion-catalogo {
+  display: flex;
+  justify-content: center;
+  margin: 24px auto 30px;
+}

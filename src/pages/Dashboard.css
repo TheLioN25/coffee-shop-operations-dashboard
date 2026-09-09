@@ -1,0 +1,403 @@
+.dashboard {
+  min-height: 100vh;
+  padding: 76px 32px 56px;
+  background:
+    radial-gradient(circle at top left, #fffaf5 0, transparent 34%),
+    #f5f1eb;
+  color: #2f241f;
+}
+
+.dashboard-header {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #30241f;
+  font-size: 34px;
+  font-weight: 750;
+  letter-spacing: -0.8px;
+}
+
+.dashboard-header p {
+  margin: 7px 0 0;
+  color: #75665e;
+  font-size: 15px;
+}
+
+/* =========================
+   MÉTRICAS
+   ========================= */
+
+.metricas-grid {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.metrica-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 94px;
+  padding: 20px 22px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #e7ddd4;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(70, 50, 40, 0.055);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.metrica-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 24px rgba(70, 50, 40, 0.09);
+}
+
+.metrica-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #f0e5da;
+  font-size: 23px;
+}
+
+.metrica-card p {
+  margin: 0 0 5px;
+  color: #75665e;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.metrica-card strong {
+  color: #382a23;
+  font-size: 25px;
+  font-weight: 750;
+  letter-spacing: -0.4px;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+   ========================= */
+
+.dashboard-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 18px;
+}
+
+.dashboard-card {
+  min-width: 0;
+  padding: 23px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #e7ddd4;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(70, 50, 40, 0.055);
+}
+
+.productos-vendidos {
+  grid-row: span 2;
+}
+
+/* =========================
+   ENCABEZADOS DE TARJETAS
+   ========================= */
+
+.card-header {
+  margin-bottom: 20px;
+}
+
+.card-header h2 {
+  margin: 0;
+  color: #352720;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+.card-header p {
+  margin: 5px 0 0;
+  color: #82736b;
+  font-size: 13px;
+}
+
+/* =========================
+   TABLA
+   ========================= */
+
+.tabla-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr {
+  background: #faf7f4;
+}
+
+th,
+td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #eee5de;
+  text-align: left;
+}
+
+th {
+  color: #75665e;
+  font-size: 12px;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+td {
+  color: #43352e;
+  font-size: 14px;
+}
+
+tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+tbody tr:hover {
+  background: #fdfaf7;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+td:nth-child(2),
+td:nth-child(3),
+th:nth-child(2),
+th:nth-child(3) {
+  text-align: right;
+}
+
+td:nth-child(3) {
+  color: #6b422d;
+  font-weight: 650;
+}
+
+/* =========================
+   STOCK BAJO
+   ========================= */
+
+.lista-stock,
+.lista-clientes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stock-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 10px;
+  border: 1px solid #f0e7e0;
+  border-radius: 13px;
+  background: #fcfaf8;
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.stock-item:hover {
+  transform: translateX(2px);
+  background: #faf5f0;
+}
+
+.stock-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.stock-item div,
+.cliente-item div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.stock-item strong,
+.cliente-item strong {
+  color: #3b2d26;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.stock-item span,
+.cliente-item span {
+  margin-top: 4px;
+  color: #82736b;
+  font-size: 12px;
+}
+
+.stock-item span {
+  color: #a64b32;
+  font-weight: 650;
+}
+
+/* =========================
+   CLIENTES
+   ========================= */
+
+.cliente-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px;
+  border: 1px solid #f0e7e0;
+  border-radius: 13px;
+  background: #fcfaf8;
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.cliente-item:hover {
+  transform: translateX(2px);
+  background: #faf5f0;
+}
+
+.cliente-posicion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: #f0e5da;
+  color: #8a5a3c !important;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.cliente-item div {
+  flex: 1;
+  overflow: hidden;
+}
+
+.cliente-item div strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cliente-compras {
+  flex-shrink: 0;
+  padding: 7px 10px;
+  border-radius: 9px;
+  background: #f0e5da;
+  color: #6b422d !important;
+  font-size: 12px !important;
+  font-weight: 750 !important;
+}
+
+/* =========================
+   ESTADOS
+   ========================= */
+
+.sin-datos,
+.dashboard-estado,
+.dashboard-error {
+  margin: 0;
+  padding: 24px;
+  text-align: center;
+  color: #75665e;
+  font-size: 14px;
+}
+
+.dashboard-error {
+  max-width: 600px;
+  margin: 80px auto;
+  background: #fff0ed;
+  border: 1px solid #e6b8ad;
+  border-radius: 14px;
+  color: #9b3928;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .dashboard {
+    padding: 32px 20px 48px;
+  }
+
+  .metricas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .productos-vendidos {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard {
+    padding: 24px 14px 40px;
+  }
+
+  .dashboard-header {
+    margin-bottom: 24px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 27px;
+  }
+
+  .dashboard-header p {
+    font-size: 14px;
+  }
+
+  .dashboard-card,
+  .metrica-card {
+    padding: 17px;
+  }
+
+  .metrica-card {
+    min-height: 82px;
+  }
+
+  .metrica-icono {
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+  }
+
+  .metrica-card strong {
+    font-size: 22px;
+  }
+
+  .card-header h2 {
+    font-size: 17px;
+  }
+
+  th,
+  td {
+    padding: 11px 8px;
+  }
+}

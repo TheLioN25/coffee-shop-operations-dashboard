@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import { obtenerProductos } from "./services/productosService";
 import CompraModal from "./components/CompraModal";
 import ConfirmacionCompra from "./components/ConfirmacionCompra";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const [productos, setProductos] = useState([]);
   const [error, setError] = useState(null);
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
   const [confirmacionCompra, setConfirmacionCompra] = useState(null);
+  const [vista, setVista] = useState("catalogo");
 
   async function cargarProductos() {
     try {
@@ -35,12 +37,36 @@ function App() {
     cargarProductos();
   }
 
+  if (vista === "dashboard") {
+    return (
+      <>
+        <button
+          className="boton-volver-dashboard"
+          onClick={() => setVista("catalogo")}
+        >
+          ← Volver al catálogo
+        </button>
+
+        <Dashboard />
+      </>
+    );
+  }
+
   return (
     <main className="catalogo">
       <header className="encabezado">
         <h1>☕ Coffee Shop</h1>
         <p>Disfruta nuestros productos favoritos</p>
       </header>
+
+      <nav className="navegacion-catalogo" aria-label="Navegación principal">
+        <button
+          className="boton-dashboard"
+          onClick={() => setVista("dashboard")}
+        >
+          ✨ Destacados
+        </button>
+      </nav>
 
       {error && <p>{error}</p>}
 
