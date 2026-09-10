@@ -7,6 +7,7 @@ import {
 } from "../services/dashboardService";
 import "./Dashboard.css";
 import Inventario from "../components/Inventario";
+import Clientes from "../components/Clientes";
 
 function formatearMoneda(valor) {
   return `$${Number(valor).toLocaleString("es-CO")}`;
@@ -110,6 +111,8 @@ function Dashboard() {
       </section>
 
       <Inventario />
+
+      <Clientes />
 
       <section className="dashboard-grid">
         <article className="dashboard-card productos-vendidos">
