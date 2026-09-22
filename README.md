@@ -245,7 +245,9 @@ Un usuario obtiene permisos administrativos cuando su registro tiene:
 
 es_admin = true
 
-La ausencia de un perfil administrativo implica acceso denegado.
+La ausencia de un perfil administrativo o el valor es_admin = false implica acceso denegado.
+
+Se han actualizado y aprovisionado los usuarios y roles administrativos directamente a nivel de base de datos en Supabase, vinculando las identidades de autenticación con la tabla de perfiles y manteniendo las credenciales protegidas de forma segura fuera del control de versiones.
 
 Row Level Security
 
